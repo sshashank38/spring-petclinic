@@ -2,7 +2,7 @@
 node('SPC') {
 
     stage('scm') {
-        git credentialsId: 'jenkins_key1', url: 'https://github.com/sshashank38/spring-petclinic'
+        git branch: 'main', credentialsId: 'jenkins_key1', url: 'https://github.com/sshashank38/spring-petclinic.git'
     }
 
     stage('build') {
