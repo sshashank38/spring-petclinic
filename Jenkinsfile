@@ -11,6 +11,6 @@ node('SPC') {
 
     stage('postbuild'){
         junit '**/TEST-*.xml'
-        archiveArtifacts artifacts: '**/*.war', followSymlinks: false
+        archiveArtifacts artifacts: '**/*.jar', followSymlinks: false
     }
 }
